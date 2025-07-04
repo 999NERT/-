@@ -49,7 +49,7 @@ h1 {
 .social-icons img {
   width: 28px;
   height: 28px;
-  opacity: 0.9;
+  opacity: 0.95;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
@@ -80,4 +80,21 @@ h1 {
 .links a:hover {
   background-color: #e0e0e0;
   box-shadow: 0 8px 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Specjalny przycisk CSGOSKINS */
+.csgo-btn {
+  background-color: #00aeef;
+  color: white;
+  font-size: 0.95rem;
+  padding: 14px 16px;
+  border-radius: 16px;
+  line-height: 1.4;
+  font-weight: 600;
+  box-shadow: 0 6px 12px rgba(0, 174, 239, 0.3);
+}
+
+.csgo-btn:hover {
+  background-color: #0095d5;
+  box-shadow: 0 8px 18px rgba(0, 174, 239, 0.5);
 }
