@@ -78,13 +78,16 @@ h1 {
   font-weight: 600;
   box-shadow: 0 6px 12px rgba(0, 174, 239, 0.3);
   flex: 1;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-/* Hover efekt */
 .csgo-btn:hover {
   background-color: #0095d5;
   box-shadow: 0 8px 18px rgba(0, 174, 239, 0.5);
