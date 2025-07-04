@@ -1,33 +1,40 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #000;
   color: #fff;
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
-  padding-top: 60px;
+  padding: 60px 16px 40px;
   min-height: 100vh;
-  margin: 0;
+  text-align: center;
 }
 
 main {
-  width: 100%;
   max-width: 900px;
-  padding: 0 16px;
-  text-align: center;
+  width: 100%;
 }
 
 h1 {
   font-size: 2.4rem;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
-.links-grid {
+/* Kontener trzech kolumn */
+.links-wrapper {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 32px; /* odstęp między kolumnami */
 }
 
+/* Każda kolumna */
 .links-column {
   display: flex;
   flex-direction: column;
@@ -35,10 +42,12 @@ h1 {
   width: 200px;
 }
 
-.links-column.center-column {
-  width: 280px; /* szerzej dla środkowej kolumny */
+/* Środkowa kolumna jest nieco szersza */
+.center-column {
+  width: 280px;
 }
 
+/* Style przycisków */
 .links-column a {
   background-color: #fff;
   color: #000;
@@ -50,6 +59,8 @@ h1 {
   box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   line-height: 1.4;
+  white-space: normal;
+  text-align: center;
 }
 
 .links-column a:hover {
@@ -57,19 +68,17 @@ h1 {
   box-shadow: 0 8px 15px rgba(255, 255, 255, 0.5);
 }
 
-/* Przycisk CSGOSKINS w środku */
+/* Specjalny przycisk CSGOSKINS */
 .csgo-btn {
   background-color: #00aeef;
   color: white;
   font-size: 0.95rem;
   padding: 10px 16px;
   border-radius: 16px;
-  line-height: 1.4;
   font-weight: 600;
   box-shadow: 0 6px 12px rgba(0, 174, 239, 0.3);
-  white-space: normal;
-  text-align: center;
 }
+
 .csgo-btn:hover {
   background-color: #0095d5;
   box-shadow: 0 8px 18px rgba(0, 174, 239, 0.5);
