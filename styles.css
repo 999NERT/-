@@ -1,14 +1,14 @@
-/* RESET */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Tło i podstawy */
+/* Body i główne ustawienia */
 body {
-  background: #000;
-  color: #fff;
+  background: #000; /* czarne tło */
+  color: #fff; /* biały tekst poza przyciskiem */
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
@@ -29,24 +29,31 @@ h1 {
   margin-bottom: 40px;
 }
 
-/* Kontener przycisków */
+/* Kontener na linki */
 .links {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Jedyny przycisk */
+/* Styl przycisku */
 .link-btn {
-  background: #fff;
-  color: #000;
+  background: #fff; /* białe tło */
+  color: #000; /* czarny tekst */
+  font-weight: 700; /* pogrubiony */
   text-decoration: none;
   padding: 14px 24px;
   border-radius: 16px;
   font-size: 1rem;
-  font-weight: 600;
   box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
   transition: background 0.2s;
+
+  max-width: 320px;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .link-btn:hover {
