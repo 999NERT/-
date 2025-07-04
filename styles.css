@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset i ogólne */
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +6,12 @@
 }
 
 body {
-  background-color: #000;
-  color: #fff;
+  background: #000;
   font-family: Arial, sans-serif;
+  color: #fff;
   display: flex;
   justify-content: center;
-  padding: 60px 16px 40px;
+  padding: 60px 16px;
   min-height: 100vh;
   text-align: center;
 }
@@ -23,85 +23,30 @@ main {
 
 h1 {
   font-size: 2.4rem;
-  font-weight: 700;
+  font-weight: bold;
   margin-bottom: 40px;
 }
 
-.links-wrapper {
+.links {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  align-items: center;
 }
 
-/* Górne duże przyciski */
+/* Przyciski */
 .link-btn {
-  background-color: #fff;
+  background: #fff;
   color: #000;
-  padding: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 14px 24px;
   border-radius: 16px;
-  font-weight: 600;
   font-size: 1rem;
   box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.link-btn:hover {
-  background-color: #e0e0e0;
-}
-
-/* Dolny rząd przycisków: poziome ułożenie */
-.bottom-row {
-  display: flex;
-  justify-content: center;
-  gap: 30px; /* odstęp między przyciskami */
-  margin-top: 24px;
-  align-items: center;
-}
-
-/* Lewy i prawy mały przycisk */
-.side-btn {
-  background-color: #fff;
-  color: #000;
-  padding: 12px 20px;
-  border-radius: 16px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
-  text-decoration: none;
-  white-space: nowrap;
-  transition: background-color 0.3s ease;
-  flex-shrink: 0;
-}
-
-.side-btn:hover {
-  background-color: #e0e0e0;
-}
-
-/* Środkowy przycisk CSGOSKINS */
-.csgo-btn {
-  background-color: #00aeef;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 16px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  box-shadow: 0 6px 12px rgba(0, 174, 239, 0.3);
-
-  width: 320px;
-  white-space: nowrap;
+  transition: background 0.2s;
+  max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.csgo-btn:hover {
-  background-color: #0095d5;
+  white-space: nowrap;
+  display: inline-block;
 }
