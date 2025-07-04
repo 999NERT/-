@@ -1,4 +1,4 @@
-/* Reset */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -6,123 +6,67 @@
 }
 
 body {
-  background-color: #000;
-  color: #fff;
+  background: #000;
   font-family: Arial, sans-serif;
+  color: #fff;
   display: flex;
   justify-content: center;
-  padding: 60px 16px 40px;
+  padding: 60px 16px;
   min-height: 100vh;
   text-align: center;
 }
 
 main {
-  max-width: 900px;
+  max-width: 400px;
   width: 100%;
 }
 
 h1 {
   font-size: 2.4rem;
-  font-weight: 700;
+  font-weight: bold;
   margin-bottom: 40px;
 }
 
-/* Kontener trzech kolumn */
-.links-wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 64px; /* odstęp poziomy między kolumnami */
-}
-
-/* Każda kolumna */
-.links-column {
+.links {
   display: flex;
   flex-direction: column;
-  gap: 36px; /* odstęp pionowy między przyciskami */
-  width: 200px;
+  gap: 20px;
 }
 
-/* Środkowa kolumna */
-.center-column {
-  width: 320px;
-}
-
-/* Style przycisków */
-.links-column a {
-  background-color: #fff;
+/* Zwykłe przyciski */
+.link-btn {
+  background: #fff;
   color: #000;
   text-decoration: none;
-  padding: 18px;
+  padding: 14px;
   border-radius: 16px;
+  font-weight: 600;
   font-size: 1rem;
-  font-weight: 600;
   box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  line-height: 1.4;
-  white-space: normal;
-  text-align: center;
+  transition: background 0.2s;
 }
 
-.links-column a:hover {
-  background-color: #e0e0e0;
-  box-shadow: 0 8px 15px rgba(255, 255, 255, 0.5);
+.link-btn:hover {
+  background: #e0e0e0;
 }
 
-/* Specjalny przycisk CSGOSKINS */
+/* Przycisk CSGOSKINS */
 .csgo-btn {
-  background-color: #00aeef;
-  color: white;
-  font-size: 0.95rem;
-  padding: 10px 16px;
-  border-radius: 16px;
-  font-weight: 600;
-  box-shadow: 0 6px 12px rgba(0, 174, 239, 0.3);
-
-  width: 320px;             /* ustalona szerokość */
-  white-space: nowrap;      /* tekst w jednej linii */
-  overflow: hidden;         /* ukrycie nadmiaru tekstu */
-  text-overflow: ellipsis;  /* dodanie "..." */
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.csgo-btn:hover {
-  background-color: #0095d5;
-  box-shadow: 0 8px 18px rgba(0, 174, 239, 0.5);
-}
-
-/* Dolny rząd przycisków w środkowej kolumnie */
-.bottom-row {
-  display: flex;
-  gap: 24px; /* odstęp poziomy między przyciskami */
-  margin-top: 24px;
-  justify-content: center;
-  align-items: center; /* wyrównanie pionowe */
-}
-
-/* Małe przyciski po bokach - mniejsze i wyśrodkowane pionowo */
-.small-btn {
-  flex: 0 0 120px; /* stała szerokość */
-  padding: 10px 8px;
-  font-size: 0.8rem;
-  border-radius: 16px;
-  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
-  background-color: #fff;
+  background: #fff;
   color: #000;
-  font-weight: 600;
-  text-align: center;
   text-decoration: none;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  padding: 14px 20px;
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1.2;
-}
+  /* OGRANICZENIE TEKSTU */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
-.small-btn:hover {
-  background-color: #e0e0e0;
-  box-shadow: 0 8px 15px rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
 }
