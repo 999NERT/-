@@ -5,10 +5,11 @@
   box-sizing: border-box;
 }
 
+/* Tło i podstawy */
 body {
   background: #000;
-  font-family: Arial, sans-serif;
   color: #fff;
+  font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   padding: 60px 16px;
@@ -21,26 +22,29 @@ main {
   width: 100%;
 }
 
+/* Nagłówek */
 h1 {
   font-size: 2.4rem;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 40px;
 }
 
+/* Kontener przycisków */
 .links {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Jedyny przycisk */
 .link-btn {
   background: #fff;
   color: #000;
   text-decoration: none;
   padding: 14px 24px;
   border-radius: 16px;
-  font-weight: 600;
   font-size: 1rem;
+  font-weight: 600;
   box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
   transition: background 0.2s;
 }
