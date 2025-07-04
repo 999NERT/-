@@ -31,14 +31,14 @@ h1 {
 .links-wrapper {
   display: flex;
   justify-content: center;
-  gap: 32px; /* odstęp między kolumnami */
+  gap: 64px; /* zwiększony odstęp poziomy między kolumnami */
 }
 
 /* Każda kolumna */
 .links-column {
   display: flex;
   flex-direction: column;
-  gap: 24px; /* większy odstęp pionowy między przyciskami */
+  gap: 36px; /* zwiększony odstęp pionowy między przyciskami */
   width: 200px;
 }
 
@@ -77,7 +77,7 @@ h1 {
   border-radius: 16px;
   font-weight: 600;
   box-shadow: 0 6px 12px rgba(0, 174, 239, 0.3);
-  flex: 1; /* zajmuje dostępną szerokość */
+  flex: 1;
 }
 
 .csgo-btn:hover {
@@ -88,8 +88,8 @@ h1 {
 /* Dolny rząd przycisków w środkowej kolumnie */
 .bottom-row {
   display: flex;
-  gap: 20px; /* odstęp poziomy między przyciskami */
-  margin-top: 16px; /* odstęp od góry */
+  gap: 32px; /* zwiększony odstęp poziomy */
+  margin-top: 24px; /* większy odstęp od góry */
   justify-content: center;
 }
 
