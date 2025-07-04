@@ -77,15 +77,15 @@ h1 {
   border-radius: 16px;
   font-weight: 600;
   box-shadow: 0 6px 12px rgba(0, 174, 239, 0.3);
-  flex: 1;
+
+  width: 320px;             /* ustalona szerokość */
+  white-space: nowrap;      /* tekst w jednej linii */
+  overflow: hidden;         /* ukrycie nadmiaru tekstu */
+  text-overflow: ellipsis;  /* dodanie "..." */
 
   display: flex;
   align-items: center;
   justify-content: center;
-
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .csgo-btn:hover {
