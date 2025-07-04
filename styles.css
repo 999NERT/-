@@ -49,7 +49,8 @@ h1 {
 .social-icons img {
   width: 28px;
   height: 28px;
-  opacity: 0.95;
+  filter: brightness(0) invert(1); /* Białe ikony */
+  opacity: 0.85;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
@@ -87,11 +88,16 @@ h1 {
   background-color: #00aeef;
   color: white;
   font-size: 0.95rem;
-  padding: 14px 16px;
+  padding: 10px 16px;
   border-radius: 16px;
   line-height: 1.4;
   font-weight: 600;
   box-shadow: 0 6px 12px rgba(0, 174, 239, 0.3);
+  max-width: 360px;      /* ograniczenie szerokości */
+  margin: 0 auto;        /* wyśrodkowanie */
+  display: inline-block; /* pozwala na zawijanie tekstu */
+  white-space: normal;   /* zawijanie tekstu */
+  text-align: center;
 }
 
 .csgo-btn:hover {
