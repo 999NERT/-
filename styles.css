@@ -30,15 +30,14 @@ h1 {
 .links {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
 }
 
-/* Zwykłe przyciski */
 .link-btn {
   background: #fff;
   color: #000;
   text-decoration: none;
-  padding: 14px;
+  padding: 14px 24px;
   border-radius: 16px;
   font-weight: 600;
   font-size: 1rem;
@@ -48,25 +47,4 @@ h1 {
 
 .link-btn:hover {
   background: #e0e0e0;
-}
-
-/* Przycisk CSGOSKINS */
-.csgo-btn {
-  background: #fff;
-  color: #000;
-  text-decoration: none;
-  padding: 14px 20px;
-  border-radius: 16px;
-  font-weight: 600;
-  font-size: 1rem;
-  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
-
-  /* OGRANICZENIE TEKSTU */
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-
-  display: inline-block;
-  width: 100%;
-  max-width: 100%;
 }
