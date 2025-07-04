@@ -47,8 +47,8 @@ h1 {
 }
 
 .social-icons img {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   opacity: 0.9;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -68,12 +68,13 @@ h1 {
   background-color: #fff;
   color: #000;
   text-decoration: none;
-  padding: 18px 0;
+  padding: 18px;
   border-radius: 16px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  line-height: 1.4;
 }
 
 .links a:hover {
