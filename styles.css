@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* Body styling */
+/* Body */
 body {
   background-color: #000;
   color: #fff;
@@ -18,7 +18,7 @@ body {
   padding-top: 60px;
 }
 
-/* Main content */
+/* Main */
 main {
   width: 100%;
   max-width: 420px;
@@ -26,21 +26,43 @@ main {
   text-align: center;
 }
 
-/* Profile image */
+/* Profile */
+.profile-container {
+  margin-bottom: 30px;
+}
+
 .profile-img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 0 auto 30px;
+  margin: 0 auto 20px;
   display: block;
 }
 
-/* Username */
 h1 {
   font-size: 2.4rem;
   font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
   margin-bottom: 30px;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.2);
 }
 
 /* Links */
