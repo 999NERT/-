@@ -1,11 +1,11 @@
-/* Reset stylów */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Czarne tło, domyślny font */
+/* Czarne tło i font */
 body {
   background-color: #000;
   font-family: Arial, sans-serif;
@@ -15,39 +15,40 @@ body {
   align-items: center;
 }
 
-/* Układ poziomy */
+/* Kontener poziomy */
 .container {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-/* Wideo na środku */
+/* Styl iframe */
 .video-wrapper iframe {
   width: 640px;
   height: 360px;
   border-radius: 16px;
   border: none;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  display: block;
 }
 
-/* Przycisk po prawej stronie */
+/* Przycisk */
 .button-wrapper {
   display: flex;
   align-items: center;
-  height: 360px;
+  height: 360px; /* dokładnie jak iframe */
 }
 
 .button-wrapper button {
   background-color: #fff;
   color: #000;
-  font-size: 18px;
-  padding: 12px 24px;
+  font-size: 20px;
+  padding: 14px 30px;
   border: none;
   border-radius: 30px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
 }
 
 .button-wrapper button:hover {
