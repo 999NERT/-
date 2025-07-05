@@ -1,13 +1,13 @@
+/* Reset stylów */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Czarne tło, domyślny font */
 body {
-  background-image: url('https://i.imgur.com/1UjdKJK.png');
-  background-size: cover;
-  background-position: center;
+  background-color: #000;
   font-family: Arial, sans-serif;
   height: 100vh;
   display: flex;
@@ -15,30 +15,39 @@ body {
   align-items: center;
 }
 
+/* Układ poziomy */
 .container {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 
+/* Wideo na środku */
 .video-wrapper iframe {
   width: 640px;
   height: 360px;
-  border-radius: 20px;
+  border-radius: 16px;
   border: none;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Przycisk po prawej stronie */
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  height: 360px;
 }
 
 .button-wrapper button {
-  background-color: white;
-  color: black;
-  font-size: 20px;
+  background-color: #fff;
+  color: #000;
+  font-size: 18px;
   padding: 12px 24px;
   border: none;
   border-radius: 30px;
   cursor: pointer;
-  transition: background 0.3s ease;
-  font-family: Arial, sans-serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
 }
 
 .button-wrapper button:hover {
