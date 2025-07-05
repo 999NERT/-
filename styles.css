@@ -1,11 +1,9 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Czarne tło i font */
 body {
   background-color: #000;
   font-family: Arial, sans-serif;
@@ -15,14 +13,12 @@ body {
   align-items: center;
 }
 
-/* Kontener poziomy */
 .container {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-/* Styl iframe */
 .video-wrapper iframe {
   width: 640px;
   height: 360px;
@@ -32,11 +28,10 @@ body {
   display: block;
 }
 
-/* Przycisk */
 .button-wrapper {
   display: flex;
   align-items: center;
-  height: 360px; /* dokładnie jak iframe */
+  height: 360px;
 }
 
 .button-wrapper button {
