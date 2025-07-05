@@ -1,61 +1,46 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body i główne ustawienia */
 body {
-  background: #000; /* czarne tło */
-  color: #fff; /* biały tekst poza przyciskiem */
+  background-image: url('https://i.imgur.com/1UjdKJK.png');
+  background-size: cover;
+  background-position: center;
   font-family: Arial, sans-serif;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 60px 16px;
-  min-height: 100vh;
-  text-align: center;
-}
-
-main {
-  max-width: 400px;
-  width: 100%;
-}
-
-/* Nagłówek */
-h1 {
-  font-size: 2.4rem;
-  font-weight: 700;
-  margin-bottom: 40px;
-}
-
-/* Kontener na linki */
-.links {
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
-/* Styl przycisku */
-.link-btn {
-  background: #fff; /* białe tło */
-  color: #000; /* czarny tekst */
-  font-weight: 700; /* pogrubiony */
-  text-decoration: none;
-  padding: 14px 24px;
-  border-radius: 16px;
-  font-size: 1rem;
-  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
-  transition: background 0.2s;
-
-  max-width: 320px;
-  width: 100%;
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.link-btn:hover {
-  background: #e0e0e0;
+.video-wrapper iframe {
+  width: 640px;
+  height: 360px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.button-wrapper button {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-family: Arial, sans-serif;
+}
+
+.button-wrapper button:hover {
+  background-color: #ddd;
 }
